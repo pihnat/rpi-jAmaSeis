@@ -1,14 +1,16 @@
 # rpi-jAmaSeis
 How to install jAmaSeis on a Raspberry Pi.
 
-1. Ensure you have the latest version of Raspian installed (Buster), the system updated and your Pi connected to the internet.
+1. Ensure you have the latest version of Raspian installed (currently Buster), the system updated and your Pi connected to the internet. If you like you can change the name of your Raspberry Pi to Seismograph in the Raspberry Pi Configuration menu.
 
-2. First, let's download jAmaSeis.
+2. Now, let's download jAmaSeis.
 Run the web browser Chromium on your raspi and go to the following site:
 
     https://www.iris.edu/hq/jamaseis/
 
-    After entering your details you'll see options for downloading jAmaSeis for Windows 64bit, MAC and Linux. Download the Linux version. At the bottom left of Chromium's window you'll see the progress of the download. When done it'll say
+    After entering your details you'll see options for downloading jAmaSeis for Windows 64bit, MAC and Linux. Download the Linux version. At the bottom left of Chromium's window you'll see the progress of the download.
+    
+    When done it'll say
 
     "This type of file can harm your computer. Do you want to keep jAmaSeis_1_xxxxx.sh anyway?"
 
@@ -30,13 +32,14 @@ Run the web browser Chromium on your raspi and go to the following site:
     
     sh jAmaSeis_1_xxxxx.sh
 
-    (replace "_1_xxxxx" with the actual version of jAmaSeis you downloaded as shown by the "ls" command). The installer will run in a separate window. Just use the defaults for all answers.
+    (replace "_1_xxxxx" with the actual version of jAmaSeis you downloaded as shown by the "ls" command). The installer will run in a separate window, just use the defaults for all answers.
 
 -----------------------------------------------------------------------------------------
 
 Notes:
 1. If an icon for jAmaSeis doesn't appear on the desktop after installation go to the Applications Menu and under "Other" right click "jAmaSeis" and select "Add to desktop".
-When you double click the jAmaSeis icon, if a popup box asking "What do you want to do with it?" appears click Cancel, go to File Manager and under menu item "Edit" select "Preferences". Tick the box that says "Don't ask options on launch executable file".
+
+    When you double click the jAmaSeis icon, if a popup box asking "What do you want to do with it?" appears click Cancel, go to File Manager and under menu item "Edit" select "Preferences". Tick the box that says "Don't ask options on launch executable file".
 
 2. In jAmaSeis when you create a local station your USB data acquisition device will appear as /dev/USB0, etc.
 You can also use the Raspberry Pi's serial port (pins 8 & 10 on the GPIO connector) if you have a device to connect to it.
@@ -61,5 +64,5 @@ But occasionally the newer version of jAmaSeis requires a newer version of java.
     
     sudo apt install default-jdk
 
-    However if there's been a major update of Linux then java may also have been updated and the above process probably won't work. For example jAmaSeis_1_11_0_136.sh and jAmaSeis_1_11_1_184.sh were ok with java 1.8 running under Raspian Stretch butthe next update jAmaSeis_1_11_3_125.sh now requires java 11 which isn't available for Raspian Stretch. It does come preinstalled with Raspian Buster so this time you would need to do a major Raspian re-install. 
+    However if there's been a major update of Linux then java may also have been updated and the above process probably won't work. For example jAmaSeis_1_11_0_136.sh and jAmaSeis_1_11_1_184.sh were ok with java 1.8 running under Raspian Stretch but the next update jAmaSeis_1_11_3_125.sh now requires java 11 which isn't available for Raspian Stretch. It does come preinstalled with Raspian Buster so this time you would need to do a major Raspian re-install. 
 
