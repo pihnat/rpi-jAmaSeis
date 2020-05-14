@@ -61,5 +61,5 @@ But occasionally the newer version of jAmaSeis requires a newer version of java.
     
     sudo apt install default-jdk
 
-    However if there's been a major update of Linux then java may also have been updated and the above process probably won't work. For example jAmaSeis_1_11_0_136.sh and jAmaSeis_1_11_1_184.sh were ok with java 1.8 running under Raspian Stretch butthe next update jAmaSeis_1_11_3_125.sh now requires java 11 which isn't available for Raspian Stretch. It does come preinstalled with Raspian Buster so this time you would need to do a major Raspian re-install. 
+    However if there's been a major update of Linux then java may also have been updated and the above process probably won't work. For example jAmaSeis_1_11_0_136.sh and jAmaSeis_1_11_1_184.sh were ok with java 1.8 running under Raspian Stretch but the next update jAmaSeis_1_11_3_125.sh now requires java 11 which isn't available for Raspian Stretch. It does come preinstalled with Raspian Buster so this time you would need to do a major Raspian re-install. 
 
