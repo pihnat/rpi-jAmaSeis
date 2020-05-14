@@ -51,7 +51,7 @@ Run the web browser Chromium on your raspi and go to the following site:
 Notes:
 1. If an icon for jAmaSeis doesn't appear on the desktop after installation go to the Applications Menu and under "Other" right click "jAmaSeis" and select "Add to desktop".
 
-    When you double click the jAmaSeis icon, if a popup box asking "What do you want to do with it?" appears click Cancel, go to File Manager and under menu item "Edit" select "Preferences". Tick the box that says "Don't ask options on launch executable file".
+    When you double click the jAmaSeis icon to run it, if a popup box asking "What do you want to do with it?" appears click Cancel, go to File Manager and under menu item "Edit" select "Preferences". Tick the box that says "Don't ask options on launch executable file".
 
 ![screenshot](/screenshots/DontAsk.png)
 
@@ -68,7 +68,7 @@ You can also use the Raspberry Pi's serial port (pins 8 & 10 on the GPIO connect
     
     The Raspberry Pi's serial port will appear as /dev/ttyS0 in jAmaSeis.
 
-3. Remember the Raspberry Pi's SD card doesn't have a high storage capacity so if you let jAmaSeis save all data from your seismograph or remote station it will fill the card very quickly. Current versions of jAmaSeis allow you to set the "Max Days of Data to Keep". Look for it in the Settings menu.
+3. Remember the Raspberry Pi's SD card doesn't have a high storage capacity so if you let jAmaSeis save all data from your seismograph or remote station it will eventually fill the card. Current versions of jAmaSeis allow you to set the "Max Days of Data to Keep". Look for it in the Settings menu.
 The alternative is to use external USB storage for the data files or, as in my case, I installed Raspian on a 1TB portable USB hard drive so the operating system and all data reside there (it doesn't use an SD card at all). It's a headless setup with VNC enabled. 
 
 4. When jAmaSeis checks for updates there normally isn't a problem in downloading and installing the update. Either a pop-up box will open saying there's an update available, "Would you like to download the installer now?" or you can do it manually by going to "About" in the main menu and selecting "Check For Updates".
@@ -82,5 +82,5 @@ But occasionally the newer version of jAmaSeis requires a newer version of java.
     
     sudo apt install default-jdk
 
-    However if there's been a major update of Linux then java may also have been updated and the above process probably won't work. For example jAmaSeis_1_11_0_136.sh and jAmaSeis_1_11_1_184.sh were ok with java 1.8 running under Raspian Stretch but the next update jAmaSeis_1_11_3_125.sh now requires java 11 which isn't available for Raspian Stretch. It does come preinstalled with Raspian Buster so this time you would need to do a major Raspian re-install. 
+    However if there's been a major update of Linux then java may also have been updated and the above process probably won't work. For example jAmaSeis_1_11_0_136.sh and jAmaSeis_1_11_1_184.sh were ok with java 1.8 running under Raspian Stretch but the next update jAmaSeis_1_11_3_125.sh now requires java 11 which isn't available for Raspian Stretch. It does come preinstalled with Raspian Buster so this time you would need to do a major Raspian re-install. In my case I copied the whole jamaseisData folder using file transfer in VNC to my laptop, installed Buster from scratch using Etcher, re-installed jAmaSeis and copied the jamaseisData folder back.
 
