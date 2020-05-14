@@ -5,8 +5,7 @@
 
 ![screenshot](/screenshots/Name.png)
 
-2. Now, let's download jAmaSeis.
-Run the web browser Chromium on your raspi and go to the following site:
+2. Now, let's download jAmaSeis. Run the web browser Chromium on your raspi and go to the following site:
 
     https://www.iris.edu/hq/jamaseis/
 
