@@ -1,5 +1,4 @@
-# rpi-jAmaSeis
-How to install jAmaSeis on a Raspberry Pi.
+# How to install jAmaSeis on a Raspberry Pi.
 
 1. Ensure you have the latest version of Raspian installed (currently Buster), the system updated and your Pi connected to the internet. If you like you can change the name of your Raspberry Pi to Seismograph in the Raspberry Pi Configuration menu.
 
