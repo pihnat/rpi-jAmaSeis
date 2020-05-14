@@ -14,11 +14,11 @@ Run the web browser Chromium on your raspi and go to the following site:
     
 ![screenshot](/screenshots/Download.png)
     
-    When done it'll say
+When done it'll say
 
-    **This type of file can harm your computer. Do you want to keep jAmaSeis_1_xxxxx.sh anyway?**
+**This type of file can harm your computer. Do you want to keep jAmaSeis_1_xxxxx.sh anyway?**
 
-    Click the **Keep** box then close your browser.
+Click the **Keep** box then close your browser.
 
 ![screenshot](/screenshots/Keep.png)
 
