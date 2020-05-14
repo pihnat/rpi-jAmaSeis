@@ -1,6 +1,6 @@
 # How to install jAmaSeis on a Raspberry Pi.
 
-1. Ensure you have the latest version of Raspian installed (currently Buster), the system updated and your Pi connected to the internet. If you like you can change the name of your Raspberry Pi to **Seismograph** in the Raspberry Pi Configuration menu to distinguish it from other raspis you might have running.
+1. Ensure you have the latest version of Raspian installed (currently Buster), the system updated and your Pi connected to the internet. If you like you can change the name of your Raspberry Pi to **Seismograph** in the Raspberry Pi Configuration menu to distinguish it from other raspi's you might have running.
 
 
 ![screenshot](/screenshots/Name.png)
@@ -67,7 +67,7 @@ You can also use the Raspberry Pi's serial port (pins 8 & 10 on the GPIO connect
   The Raspberry Pi's serial port will appear as /dev/ttyS0 in jAmaSeis.
 
 3. Remember the Raspberry Pi's SD card doesn't have a high storage capacity so if you let jAmaSeis save all data from your seismograph or remote station it will eventually fill the card. Current versions of jAmaSeis allow you to set the **Max Days of Data to Keep**. Look for it in the Settings menu.
-The alternative is to use external USB storage for the data files or, as in my case, I installed Raspian on a 1TB portable USB hard drive so the operating system and all data reside there (it doesn't use an SD card at all). It's a headless setup with VNC enabled. 
+The alternative is to use external USB storage for the data files or, as in my case, I installed Raspian on a 1TB portable USB hard drive so the operating system and all data reside there (it doesn't use an SD card at all). It's a headless setup with VNC enabled. (Booting from a hard drive with a raspi4 isn't possible yet - mine's a raspi 3B+) 
 
 4. When jAmaSeis checks for updates there normally isn't a problem in downloading and installing the update. Either a pop-up box will open saying there's an update available, **Would you like to download the installer now?** or you can do it manually by going to **About** in the main menu and selecting **Check For Updates**.
 But occasionally the newer version of jAmaSeis requires a newer version of java. You can check the currently installed version of java by opening a Terminal window and typing:
