@@ -14,11 +14,11 @@ Run the web browser Chromium on your raspi and go to the following site:
     
 ![screenshot](/screenshots/Download.png)
     
-When done it'll say
+    When done it'll say
 
-**This type of file can harm your computer. Do you want to keep jAmaSeis_1_xxxxx.sh anyway?**
+    **This type of file can harm your computer. Do you want to keep jAmaSeis_1_xxxxx.sh anyway?**
 
-Click the **Keep** box then close your browser.
+    Click the **Keep** box then close your browser.
 
 ![screenshot](/screenshots/Keep.png)
 
@@ -43,7 +43,7 @@ Click the **Keep** box then close your browser.
 ![screenshot](/screenshots/Install.png)
 
 
-The installer will run in a separate window, just use the defaults for all answers.
+    The installer will run in a separate window, just use the defaults for all answers.
 
 -----------------------------------------------------------------------------------------
 
@@ -65,7 +65,7 @@ You can also use the Raspberry Pi's serial port (pins 8 & 10 on the GPIO connect
 ![screenshot](/screenshots/Interfaces.png)
 
     
-The Raspberry Pi's serial port will appear as /dev/ttyS0 in jAmaSeis.
+    The Raspberry Pi's serial port will appear as /dev/ttyS0 in jAmaSeis.
 
 3. Remember the Raspberry Pi's SD card doesn't have a high storage capacity so if you let jAmaSeis save all data from your seismograph or remote station it will eventually fill the card. Current versions of jAmaSeis allow you to set the **Max Days of Data to Keep**. Look for it in the Settings menu.
 The alternative is to use external USB storage for the data files or, as in my case, I installed Raspian on a 1TB portable USB hard drive so the operating system and all data reside there (it doesn't use an SD card at all). It's a headless setup with VNC enabled. 
