@@ -2,6 +2,8 @@
 How to install jAmaSeis on a Raspberry Pi.
 
 1. Ensure you have the latest version of Raspian installed (currently Buster), the system updated and your Pi connected to the internet. If you like you can change the name of your Raspberry Pi to Seismograph in the Raspberry Pi Configuration menu.
+
+
 ![screenshot](/screenshots/Name.png)
 
 2. Now, let's download jAmaSeis.
@@ -11,11 +13,15 @@ Run the web browser Chromium on your raspi and go to the following site:
 
     After entering your details you'll see options for downloading jAmaSeis for Windows 64bit, MAC and Linux. Download the Linux version. At the bottom left of Chromium's window you'll see the progress of the download.
     
+![screenshot](/screenshots/Download.png)
+    
     When done it'll say
 
     "This type of file can harm your computer. Do you want to keep jAmaSeis_1_xxxxx.sh anyway?"
 
     Click the "Keep" box" then close your browser.
+
+![screenshot](/screenshots/Keep.png)
 
 
 3. Next, install the java serial comms library and link it. Open a Terminal window and type the following commands exactly, paying attention to case:
@@ -33,7 +39,12 @@ Run the web browser Chromium on your raspi and go to the following site:
     
     sh jAmaSeis_1_xxxxx.sh
 
-    (replace "_1_xxxxx" with the actual version of jAmaSeis you downloaded as shown by the "ls" command). The installer will run in a separate window, just use the defaults for all answers.
+    (replace "_1_xxxxx" with the actual version of jAmaSeis you downloaded as shown by the "ls" command).
+
+![screenshot](/screenshots/Install.png)
+
+
+    The installer will run in a separate window, just use the defaults for all answers.
 
 -----------------------------------------------------------------------------------------
 
