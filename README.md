@@ -43,7 +43,7 @@ Run the web browser Chromium on your raspi and go to the following site:
 ![screenshot](/screenshots/Install.png)
 
 
-    The installer will run in a separate window, just use the defaults for all answers.
+The installer will run in a separate window, just use the defaults for all answers.
 
 -----------------------------------------------------------------------------------------
 
