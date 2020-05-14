@@ -1,6 +1,6 @@
 # How to install jAmaSeis on a Raspberry Pi.
 
-1. Ensure you have the latest version of Raspian installed (currently Buster), the system updated and your Pi connected to the internet. If you like you can change the name of your Raspberry Pi to **Seismograph** in the Raspberry Pi Configuration menu.
+1. Ensure you have the latest version of Raspian installed (currently Buster), the system updated and your Pi connected to the internet. If you like you can change the name of your Raspberry Pi to **Seismograph** in the Raspberry Pi Configuration menu to distinguish it from other raspis you might have running.
 
 
 ![screenshot](/screenshots/Name.png)
@@ -80,5 +80,5 @@ But occasionally the newer version of jAmaSeis requires a newer version of java.
     
     sudo apt install default-jdk
 
-    However if there's been a major update of Linux then java may also have been updated and the above process probably won't work. For example jAmaSeis_1_11_0_136.sh and jAmaSeis_1_11_1_184.sh were ok with java 1.8 running under Raspian Stretch but the next update jAmaSeis_1_11_3_125.sh now requires java 11 which isn't available for Raspian Stretch. It does come preinstalled with Raspian Buster so this time you would need to do a major Raspian re-install. In my case I copied the whole jamaseisData folder using file transfer in VNC to my laptop, installed Buster from scratch using Etcher, re-installed jAmaSeis and copied the jamaseisData folder back.
+    However if there's been a major update of Linux then java may also have been updated and the above process probably won't work. For example jAmaSeis_1_11_0_136.sh and jAmaSeis_1_11_1_184.sh were ok with java 1.8 running under Raspian Stretch but the next update jAmaSeis_1_11_3_125.sh now requires java 11 which isn't available for Raspian Stretch. It does come preinstalled with Raspian Buster so this time you would need to do a major Raspian re-install. In my case I copied the whole jamaseisData folder using file transfer in VNC to my laptop, installed Buster from scratch using Etcher, re-installed jAmaSeis and copied the jamaseisData folder back. Luckily this doesn't happen often.
 
