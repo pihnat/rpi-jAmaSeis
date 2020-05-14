@@ -11,7 +11,7 @@
 
     After entering your details you'll see options for downloading jAmaSeis for Windows 64bit, MAC and Linux. Download the Linux version. At the bottom left of Chromium's window you'll see the progress of the download.
     
-![screenshot](/screenshots/Download.png)
+![screenshot](/screenshots/Download.png)!
     
     When done it'll say
 
