@@ -11,13 +11,13 @@
 
     After entering your details you'll see options for downloading jAmaSeis for Windows 64bit, MAC and Linux. Download the Linux version. At the bottom left of Chromium's window you'll see the progress of the download.
     
-![screenshot](/screenshots/Download.png)!
+![screenshot](/screenshots/Download.png)
     
-    When done it'll say
+  When done it'll say
 
-    **This type of file can harm your computer. Do you want to keep jAmaSeis_1_xxxxx.sh anyway?**
+  **This type of file can harm your computer. Do you want to keep jAmaSeis_1_xxxxx.sh anyway?**
 
-    Click the **Keep** box then close your browser.
+  Click the **Keep** box then close your browser.
 
 ![screenshot](/screenshots/Keep.png)
 
