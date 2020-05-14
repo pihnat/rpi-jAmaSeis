@@ -18,13 +18,16 @@ Run the web browser Chromium on your raspi and go to the following site:
 3. Next, install the java serial comms library and link it. Open a Terminal window and type the following commands exactly, paying attention to case:
 
     sudo apt install librxtx-java
+    
     sudo ln -s /usr/lib/jni/librxtxSerial.so /usr/lib/
 
 
 4. Now you're ready to install jAmaSeis. Go to the folder where you downloaded jAmaSeis, usually /home/pi/Downloads   and run the script ie in the Terminal window type the following commands:
 
     cd /home/pi/Downloads
+    
     ls
+    
     sh jAmaSeis_1_xxxxx.sh
 
     (replace "_1_xxxxx" with the actual version of jAmaSeis you downloaded as shown by the "ls" command). The installer will run in a separate window. Just use the defaults for all answers.
@@ -36,11 +39,13 @@ Notes:
 When you double click the jAmaSeis icon, if a popup box asking "What do you want to do with it?" appears click Cancel, go to File Manager and under menu item "Edit" select "Preferences". Tick the box that says "Don't ask options on launch executable file".
 
 2. In jAmaSeis when you create a local station your USB data acquisition device will appear as /dev/USB0, etc.
-You can also use the Raspberry Pi's serial port (pins 8 & 10 on the GPIO connector) if you have a device to connect to it. To use the serial port enable it first:
-- from the Applications Menu under "Preferences", "Raspberry Pi Configuration" select the "Interfaces" tab
-- ENABLE the Serial Port and
-- DISABLE Serial Console.
-The Raspberry Pi's serial port will appear as /dev/ttyS0 in jAmaSeis.
+You can also use the Raspberry Pi's serial port (pins 8 & 10 on the GPIO connector) if you have a device to connect to it.
+    To use the serial port enable it first:
+    - from the Applications Menu under "Preferences", "Raspberry Pi Configuration" select the "Interfaces" tab
+    - ENABLE the Serial Port and
+    - DISABLE Serial Console.
+    
+    The Raspberry Pi's serial port will appear as /dev/ttyS0 in jAmaSeis.
 
 3. Remember the Raspberry Pi's SD card doesn't have a high storage capacity so if you let jAmaSeis save all data from your seismograph or remote station it will fill the card very quickly. Current versions of jAmaSeis allow you to set the "Max Days of Data to Keep". Look for it in the Settings menu.
 The alternative is to use external USB storage for the data files or, as in my case, I installed Raspian on a 1TB portable USB hard drive so the operating system and all data reside there (it doesn't use an SD card at all). It's a headless setup with VNC enabled. 
@@ -48,12 +53,13 @@ The alternative is to use external USB storage for the data files or, as in my c
 4. When jAmaSeis checks for updates there normally isn't a problem in downloading and installing the update. Either a pop-up box will open saying there's an update available, "Would you like to download the installer now?" or you can do it manually by going to "About" in the main menu and selecting "Check For Updates".
 But occasionally the newer version of jAmaSeis requires a newer version of java. You can check the currently installed version of java by opening a Terminal window and typing:
 
-java -version
+    java -version
 
-Java can be updated by typing the following commands:
+    Java can be updated by typing the following commands:
 
-sudo apt update
-sudo apt install default-jdk
+    sudo apt update
+    
+    sudo apt install default-jdk
 
-However if there's been a major update of Linux then java may also have been updated and the above process probably won't work. For example jAmaSeis_1_11_0_136.sh and jAmaSeis_1_11_1_184.sh were ok with java 1.8 running under Raspian Stretch butthe next update jAmaSeis_1_11_3_125.sh now requires java 11 which isn't available for Raspian Stretch. It does come preinstalled with Raspian Buster so this time you would need to do a major Raspian re-install. 
+    However if there's been a major update of Linux then java may also have been updated and the above process probably won't work. For example jAmaSeis_1_11_0_136.sh and jAmaSeis_1_11_1_184.sh were ok with java 1.8 running under Raspian Stretch butthe next update jAmaSeis_1_11_3_125.sh now requires java 11 which isn't available for Raspian Stretch. It does come preinstalled with Raspian Buster so this time you would need to do a major Raspian re-install. 
 
