@@ -53,12 +53,18 @@ Notes:
 
     When you double click the jAmaSeis icon, if a popup box asking "What do you want to do with it?" appears click Cancel, go to File Manager and under menu item "Edit" select "Preferences". Tick the box that says "Don't ask options on launch executable file".
 
+![screenshot](/screenshots/DontAsk.png)
+
+
 2. In jAmaSeis when you create a local station your USB data acquisition device will appear as /dev/USB0, etc.
 You can also use the Raspberry Pi's serial port (pins 8 & 10 on the GPIO connector) if you have a device to connect to it.
     To use the serial port enable it first:
     - from the Applications Menu under "Preferences", "Raspberry Pi Configuration" select the "Interfaces" tab
     - ENABLE the Serial Port and
     - DISABLE Serial Console.
+
+![screenshot](/screenshots/Interfaces.png)
+
     
     The Raspberry Pi's serial port will appear as /dev/ttyS0 in jAmaSeis.
 
